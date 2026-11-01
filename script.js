@@ -82,6 +82,14 @@ for (let i = 1; i <= 7; i++) {
 
             if (preview && target) {
                 target.innerHTML = preview.innerHTML;
+
+                target.querySelectorAll('img').forEach(img => {
+                    const src = img.getAttribute('src');
+
+                    if (src.startsWith('../')) {
+                        img.src = src.replace('../', './');
+                    }
+                });
             }
         })
         .catch(error => console.error(error));
