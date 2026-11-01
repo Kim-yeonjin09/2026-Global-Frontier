@@ -250,3 +250,70 @@ footer {
         line-height: 1.5;
     }
 }
+
+/* memo */
+.memo {
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    padding: 25px;
+    background: #fff9df;
+    color: #444;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.15);
+
+    /* 글씨체 */
+    font-family: 'Pretendard', sans-serif;
+    line-height: 1.8;
+}
+
+.line-memo {
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    padding: 25px;
+
+    /* 줄노트 배경 */
+    background-color: #fff9df;
+    background-image: repeating-linear-gradient(
+        to bottom,
+        transparent 0px,
+        transparent 29px,
+        #d8d1bd 30px
+    );
+
+    color: #444;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.15);
+    font-family: 'Pretendard', sans-serif;
+    line-height: 30px;
+}
+
+/* 접힌 모서리 */
+.line-memo::before, 
+.memo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(
+        225deg,
+        #e8dfc3 50%,
+        #fff9df 50%
+    );
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+/* 접힌 부분의 그림자 */
+.line-memo::after, 
+.memo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 35px;
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-right: 35px solid #f1e8cb;
+    opacity: 0.7;
+}
