@@ -113,3 +113,50 @@ footer {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+/* Diary 서식 */
+.diary-content {
+    display: flex;
+    width: 96%;
+    margin: 0 auto 3%;
+    gap: 2%;
+    align-items: center;
+}
+
+.diary-image,
+.diary-text {
+    flex: 0 0 49%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.diary-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.diary-text {
+    overflow-wrap: break-word;
+}
+
+/* navigation 버튼 */
+.page-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    margin: 5% auto;
+}
+
+.page-navigation a {
+    text-decoration: none;
+    color: #333;
+    font-size: clamp(24px, 4vw, 40px);
+    transition: color 0.2s;
+    font-size: larger;
+}
+
+.page-navigation a:hover {
+    color: #999;
+}
