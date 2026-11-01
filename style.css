@@ -8,18 +8,23 @@ body {
     box-sizing: border-box;
 }
 
+.background {
+    background-image: url('./images/bg.jpg');
+}
+
 .container {
     position: relative;
     width: 90%;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #ffffff;
+    padding: 15px;
 }
 
 .container .slide > a > img{
     height: 300px;
     width: 100%;
-
 }
 
 .slide{
@@ -45,21 +50,25 @@ body {
     }
 }
 
-.prev, .next{
+.prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 165px;
     width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    padding: 12px;
     color: white;
     font-size: 25px;
-    transition: 0.6s ease;
+    transition: 0.3s ease;
     user-select: none;
+    z-index: 10;
 }
 
-.next{
-    right: 0;
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
 }
 
 .prev:hover, .next:hover{
@@ -101,6 +110,7 @@ footer {
     padding: 15px 0;
     width: 100%;
     text-align: center;
+    color: white;
 }
 
 /* 미리보기 */
