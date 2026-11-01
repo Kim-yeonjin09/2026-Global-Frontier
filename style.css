@@ -159,7 +159,7 @@ footer {
     }
 
     .diary-image img {
-        width: 100%;
+        width: 85%;
         height: auto;
     }
 
@@ -175,6 +175,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 24px;
     width: 96%;
     margin: 5% auto;
 }
@@ -182,11 +183,30 @@ footer {
 .page-navigation a {
     text-decoration: none;
     color: #333;
-    font-size: clamp(24px, 4vw, 40px);
+    font-size: clamp(16px, 2.5vw, 28px);
     transition: color 0.2s;
-    font-size: larger;
+    min-width: 0;
 }
 
 .page-navigation a:hover {
     color: #999;
+}
+
+.page-navigation a:last-child {
+    text-align: right;
+}
+
+/* 스마트폰 */
+@media screen and (max-width: 768px) {
+    .page-navigation {
+        width: 92%;
+        gap: 30px;
+        margin: 10% auto;
+    }
+
+    .page-navigation a {
+        flex: 1;
+        font-size: 16px;
+        line-height: 1.5;
+    }
 }
