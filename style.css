@@ -140,6 +140,36 @@ footer {
     overflow-wrap: break-word;
 }
 
+/* 스마트폰 반응형 */
+@media screen and (max-width: 768px) {
+
+    .diary-content {
+        display: flex;
+        flex-direction: column;
+        width: 92%;
+        gap: 12px;
+        margin: 0 auto 8%;
+        align-items: stretch;
+    }
+
+    .diary-image,
+    .diary-text {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .diary-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .diary-text {
+        font-size: 15px;
+        line-height: 1.8;
+        padding: 0 3px;
+    }
+}
+
 /* navigation 버튼 */
 .page-navigation {
     display: flex;
