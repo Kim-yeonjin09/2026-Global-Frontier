@@ -70,7 +70,7 @@ function showSlides(n){
 }
 
 // diary 미리보기
-for (let i = 1; i <= 7; i++) {
+for (let i = 1; i <= 8; i++) {
     fetch(`./diary/DAY${i}.html`)
         .then(response => response.text())
         .then(html => {

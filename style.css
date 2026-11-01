@@ -237,14 +237,14 @@ footer {
 
 .page-navigation a {
     text-decoration: none;
-    color: #333;
+    color: white;/*#333;*/
     font-size: clamp(16px, 2.5vw, 28px);
     transition: color 0.2s;
     min-width: 0;
 }
 
 .page-navigation a:hover {
-    color: #999;
+    color: rgb(132, 132, 132);/* #999; */
 }
 
 .page-navigation a:last-child {
@@ -300,6 +300,7 @@ footer {
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.15);
     /* font-family: 'Pretendard', sans-serif; */
     font-family: Grandiflora One;
+    font-weight: bold;
     line-height: 30px;
 }
 
