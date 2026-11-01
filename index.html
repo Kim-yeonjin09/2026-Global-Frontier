@@ -81,21 +81,32 @@
 
             <a class="prev">&#10094;</a>
             <a class="next">&#10095;</a>
-        </div>
-        <div class="dots">
-            <span class="dot" data-val="0"></span>
-            <span class="dot" data-val="1"></span>
-            <span class="dot" data-val="2"></span>
-            <span class="dot" data-val="3"></span>
-            <span class="dot" data-val="4"></span>
-            <span class="dot" data-val="5"></span>
-            <span class="dot" data-val="6"></span>
-        </div>
+    </div>
+    <div class="dots">
+        <span class="dot" data-val="0"></span>
+        <span class="dot" data-val="1"></span>
+        <span class="dot" data-val="2"></span>
+        <span class="dot" data-val="3"></span>
+        <span class="dot" data-val="4"></span>
+        <span class="dot" data-val="5"></span>
+        <span class="dot" data-val="6"></span>
+    </div>
+    
     <div class="memo" style="width: 90%; max-width: 500px; font-family: Grandiflora One;">
         <h3>영상으로 확인하고 싶다면?</h3>
     </div>
-    <div align="center" style="display: block; color: white;">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/tVgpg8l8ZuY?si=CqWd3eMnvb3pUjAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video-section">
+        <div class="video-container">
+            <iframe
+                src="https://www.youtube.com/embed/tVgpg8l8ZuY"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write;
+                encrypted-media; gyroscope; picture-in-picture;
+                web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
     </div>
         
     <footer>
@@ -106,13 +117,5 @@
             <br>
         </div>
     </footer>
-    <style>
-        body {
-            background: 
-                linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-                url("./images/bg.jpg");
-            background-size: cover;
-        }
-    </style>
 </body>
 </html>
